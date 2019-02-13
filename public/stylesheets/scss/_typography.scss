@@ -1,16 +1,28 @@
 body {
-  color: #111;
-  font-family: Helvetica, Arial, sans-serif;
+  color: $color-main-dark;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   line-height: 147%;
 }
 
-h1 {}
+h1 {
+  text-transform: uppercase;
+  padding-top: 30px;
+  font-size: 50px;
+}
 
-h2 {}
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+}
 
-h3 {}
+h3 {
+  text-transform: capitalize;
+}
 
 p {
   margin: 0;
+  font-size: 25px;
+  font-weight: 300;
 }

@@ -1,28 +1,30 @@
- <header id="site-header" class="container">
-    <h1>mad<img src="" alt="logo of mad pulpo">pulpo</h1>
-    <p>mad web development from barcelona</p>
-    <span class="arrow"></span>
+ <header id="site-header">
+    <h1>mad <span>pulpo</span></h1>
+    <img src="" alt="logo of mad pulpo">
+    <p>Mad web development from Barcelona</p>
+    <div class="arrow-section">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180.97 92.1"><defs><style>.cls-1{fill: #f8f8f8;}</style></defs><title>arrow-down</title><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M90.48,92.1a6.81,6.81,0,0,1-4.84-2L.92,5.38A3.15,3.15,0,0,1,5.38.92L90.1,85.64a.55.55,0,0,0,.77,0L175.58.92A3.15,3.15,0,0,1,180,5.38L95.33,90.1A6.82,6.82,0,0,1,90.48,92.1Z"/></g></g></svg>
+    </div>
   </header>
-  <main id="site-main" class="container">
+  <main id="site-main">
     <section id="about">
-      <h2>mad pulpo</h2>
-      <p>Innovative and top-class web development from young and madly ambitious individuals</p>
-      <a href="#team">Meet the team</a>
-      <p>Mad Pulpo is a collective of graduates from Ironhack School
-        Barcelona, a web development bootcamp, forming the next
-        generation of web developers.
-      </p>
-      <p>The main goal after graduating has always been to continue
-        learning and deepening this new knowledge. Mad Pulpo
-        provides a platform for only the most talented, creative and
-        ambitious graduates to learn on real-life projects from simple
-        landing pages to complex web-apps.
-      </p>
-      <p>By applying industry standard best practices and working with
-        a network of experienced professionals to oversee all projects,
-        each product is developed in the highest quality.
-      </p>
-      <a href="#projects">See previous projects</a>
+      <div class="about-team container">
+        <article class="team-brief">
+          <p>Innovative and top-class web development from young and madly ambitious individuals</p>
+          <a href="#team" class="button">Meet the team</a>
+        </article>
+        <article class="team-goals">
+          <p>Mad Pulpo is a collective of graduates from Ironhack School
+            Barcelona, a web development bootcamp. The main goal after graduating has always been to continue
+            learning and deepening this new knowledge. 
+          </p>
+          <p>By applying industry standard best practices and working with
+            a network of experienced professionals to oversee all projects,
+            each product is developed in the highest quality.
+          </p>
+          <a href="#projects" class="button">See previous projects</a>
+        </article>
+      </div>
     </section>
     <section id="team">
       <h2>mad pulpo</h2>
@@ -43,7 +45,7 @@
           <p>The picaro</p>
         </article>
       </div>
-    </section>
+    </section> 
     <section id="projects">
       <article class="iron-campus">
         <h3>IronCampus</h3>
@@ -69,6 +71,6 @@
       </form>
     </section>
   </main>
-  <footer id="site-footer" class="container">
+  <footer id="site-footer">
     <p>Nice footer</p>
   </footer>

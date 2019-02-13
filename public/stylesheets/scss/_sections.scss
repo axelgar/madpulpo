@@ -1,0 +1,50 @@
+#about {
+  height: $display-all-viewport;
+  scroll-snap-align: start;
+  background-color: $color-main-light;
+  padding-top: 20px;
+  display: flex;
+
+  .about-team {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  article {
+    max-width: 400px;
+    margin-bottom: 55px;
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+  .team-brief {
+
+    p {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  .team-goals {
+    text-align: right;
+    p {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+  
+}
+
+#team {
+  height: $display-all-viewport;
+  scroll-snap-align: start;
+}
+
+#proects {
+  height: $display-all-viewport;
+  scroll-snap-align: start;
+}

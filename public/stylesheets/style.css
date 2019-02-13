@@ -11,27 +11,53 @@ body {
   padding: 0;
 }
 
-body {
-  color: #111;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 147%;
+h1, h2, h3, h4 {
+  margin: 0;
 }
 
-p {
-  margin: 0;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #site-header {
   padding: 30px 0;
-  color: white;
-  background: #111;
+  color: #F8F8F8;
+  background: #262626;
+  text-align: center;
+  height: 100vh;
+}
+#site-header p {
+  padding-top: 50vh;
+  max-width: 300px;
+  margin: auto;
+  line-height: 30px;
+  opacity: 0.8;
+}
+#site-header .arrow-section {
+  opacity: 0.8;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #F8F8F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  transform: scale(1);
+  transition: transform 0.7s ease;
+}
+#site-header .arrow-section:hover {
+  transform: scale(1.2);
+}
+#site-header .arrow-section svg {
+  width: 50%;
 }
 
 #site-footer {
   color: white;
-  padding: 60px 0;
-  background: #111;
+  padding: 20px 0;
+  background: #262626;
 }
 
 #site-main {
@@ -53,16 +79,97 @@ p {
     margin: 0 auto;
   }
 }
-.button {
-  width: 100%;
-  background-color: blue;
-  color: #fff;
-  border: 1px solid #fff;
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+body {
+  color: #262626;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  line-height: 147%;
 }
 
-.button-alt {
-  color: blue;
-  background-color: #fff;
+h1 {
+  text-transform: uppercase;
+  padding-top: 30px;
+  font-size: 50px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+
+p {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+#about {
+  height: 100vh;
+  scroll-snap-align: start;
+  background-color: #F8F8F8;
+  padding-top: 20px;
+  display: flex;
+}
+#about .about-team {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+#about article {
+  max-width: 400px;
+  margin-bottom: 55px;
+}
+#about article p {
+  margin-bottom: 30px;
+}
+#about .team-brief p {
+  font-size: 30px;
+  line-height: 40px;
+}
+#about .team-goals {
+  text-align: right;
+}
+#about .team-goals p {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+#team {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+#proects {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.button {
+  display: inline-block;
+  background-color: #E58D16;
+  color: #F8F8F8;
+  border-radius: 30px;
+  padding: 20px 35px;
+  transition: all 0.7s ease;
+  border: 2px solid #F8F8F8;
+}
+.button:hover {
+  background-color: transparent;
+  color: #E58D16;
+  border: 2px solid #E58D16;
 }
 
 /*# sourceMappingURL=style.css.map */
